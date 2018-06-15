@@ -1,0 +1,32 @@
+body {
+  background-image: url("../images/star.jpg");
+	background-color:#cccccc;/*ページ全体の背景色*/
+	text-align:center;		/*IE6以下でセンタリングするための対策*/
+}
+#mains{
+  outline-width: 3px; outline-style:solid;
+  	background-color:rgba(255,255,255,0.5);
+    height: 100%;
+
+}
+#nav {
+  outline-width: 3px; outline-style:solid;
+color: red;
+ position: relative;
+float: left;
+width: 200px; /* サイドバーの幅 */
+height: 100%;
+background-color:rgba(255,255,0,0.5);
+}
+#headers{
+  outline-width: 3px; outline-style:solid;
+  	background-color:rgba(255,255,255,0.5);
+    height: 75px;
+}
+#footers{
+  outline-width: 3px; outline-style:solid;
+  height:70px;
+  text-align:center;
+  	clear:both;					/*回り込みを解除する*/
+  	background-color:rgba(255,255,255,0.5);			/*フッタ部分の背景色*/
+}
