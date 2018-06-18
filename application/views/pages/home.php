@@ -1,4 +1,4 @@
-<div id="mains">
-ここはホームではない
+
+
+ここはホームです
 <p><a href="<?php echo site_url('about/'); ?>">aboutを見る</a></p>
-</div>

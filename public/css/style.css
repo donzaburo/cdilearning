@@ -4,19 +4,20 @@ body {
 	text-align:center;		/*IE6以下でセンタリングするための対策*/
 }
 #mains{
-  outline-width: 3px; outline-style:solid;
+  display: -webkit-flex;
+display: flex;
+}
+#homes{
+    outline-width: 3px; outline-style:solid;
   	background-color:rgba(255,255,255,0.5);
-    height: 100%;
-
+    -webkit-flex: 1;
+           flex: 1;
+            min-height: 500px;
 }
 #nav {
   outline-width: 3px; outline-style:solid;
-color: red;
- position: relative;
-float: left;
-width: 200px; /* サイドバーの幅 */
-height: 100%;
 background-color:rgba(255,255,0,0.5);
+ width: 200px;
 }
 #headers{
   outline-width: 3px; outline-style:solid;
@@ -27,6 +28,5 @@ background-color:rgba(255,255,0,0.5);
   outline-width: 3px; outline-style:solid;
   height:70px;
   text-align:center;
-  	clear:both;					/*回り込みを解除する*/
   	background-color:rgba(255,255,255,0.5);			/*フッタ部分の背景色*/
 }
