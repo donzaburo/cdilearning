@@ -5,21 +5,22 @@ public function __construct()
         {
                 parent::__construct();
                 $this->load->helper('url_helper');
-		$this->load->helper('html');
+		            $this->load->helper('html');
         }
 
        public function view($page = 'home')
-{
+       {
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
-        {
-                // ‚¨‚Á‚ÆA‚»‚Ìƒy[ƒW‚Í‚ ‚è‚Ü‚¹‚ñI
+          {
+                // ãŠã£ã¨ã€ãã®ãƒšãƒ¼ã‚¸ã¯ã‚ã‚Šã¾ã›ã‚“ï¼
                 show_404();
-        }
+          }
 
-        $data['title'] = ucfirst($page); // “ª•¶Žš‚ð‘å•¶Žš‚É
+        $data['title'] = ucfirst($page); // é ­æ–‡å­—ã‚’å¤§æ–‡å­—ã«
 
         $this->load->view('templates/header', $data);
+        $this->load->view('templates/sideber');
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);
-}
+      }
 }
