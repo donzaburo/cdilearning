@@ -13,13 +13,13 @@ class News extends CI_Controller {
        public function index()
 	{
 	        $data['news'] = $this->news_model->get_news();
-          var_dump($data);
+
 	        $data['title'] = 'News archive';
 
           $config['base_url'] = 'http://192.168.241.132/news/index/';
-          $config['total_rows'] = $this->db->get("$flug")->num_rows();
+          $config['total_rows'] = 20;
           $config['per_page'] = 3;
-
+var_dump($config);
             $this->pagination->initialize($config);
 
 	        $this->load->view('templates/header', $data);
