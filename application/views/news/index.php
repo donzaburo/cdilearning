@@ -1,8 +1,8 @@
 ﻿<h2><?php echo $title; ?></h2>
 
 <div>
-  
- <?php foreach ($news as $news_item): ?>
+
+ <?php foreach ($news->result_array() as $news_item): ?>
 
       <h3><?php echo $news_item['title']; ?></h3>
         <div class="main">

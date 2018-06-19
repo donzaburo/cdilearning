@@ -18,7 +18,7 @@ class News extends CI_Controller {
           $config['base_url'] = 'http://192.168.241.132/news/index/';
           $config["total_rows"] = $this->db->get("news")->num_rows();
           $config['per_page'] = 3;
-          $data["news"] = $this->db->get("news", $config["per_page"], $this->uri->segment(3))->result_array();
+          $data["news"] = $this->db->order_by('id','DESC')->get("news", $config["per_page"], $this->uri->segment(3));
             $this->pagination->initialize($config);
 
 	        $this->load->view('templates/header', $data);

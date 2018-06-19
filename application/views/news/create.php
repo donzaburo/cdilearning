@@ -4,12 +4,12 @@
 
 <?php echo form_open('news/create'); ?>
 
-    <label for="title">Title</label>
+    <label for="title">Title</label><br />
     <input type="input" name="title" /><br />
 
-    <label for="text">Text</label>
-    <textarea name="text"></textarea><br />
+    <label for="text">Text</label><br />
+    <textarea name="text"></textarea><br /><br />
 
-    <input type="submit" name="submit" value="Create news item" />
+    <input type="submit" name="submit" value="Create news item" class="submit"/>
 
 </form>
