@@ -9,12 +9,12 @@ class News_model extends CI_Model {
 	{
 	        if ($slug === FALSE)
 	        {
-	                $query = $this->db->order_by('title','DESC')->get('news');
+	                $query = $this->db->order_by('id','DESC')->get('news');
 	                return $query->result_array();
 	        }
-		
+
 	        $query = $this->db->get_where('news', array('slug' => $slug));
-	
+
 		return $query->row_array();
 	}
 	public function set_news()
